@@ -17,6 +17,16 @@ section {
     border: none;
     border-radius: 4px;
 }
+.grayBG {
+    position: fixed;
+    display: none;
+    background-color: gray;
+    height: 100%;
+    width: 100%;
+    opacity: 50%;
+   
+    animation: fade 2s linear;
+}
 /* header styles */
 header {
     display: flex;
@@ -35,6 +45,21 @@ nav {
     flex-direction: row;
 }
 .mobileNav { display: none; 
+}
+.subNav {
+    display: none;
+    list-style-type: none;
+    background-color: #ffffff;
+    position: absolute;
+    width: 100%;
+    padding: 0px;
+    margin: 0;
+    z-index: 100;
+    max-width: 1200px;
+    padding-bottom: 10px;
+}
+.subNavItem {
+    margin-left: 6px;
 }
 .contactButton {
     border-radius: 4px ;
@@ -60,7 +85,7 @@ h1 {
 h2 {
     font-size: 32px;
     white-space: nowrap;
-    font-family: Share;
+    font-family: share;
 }
 h3 {
     font-size: 16px 5px;
@@ -108,7 +133,8 @@ li {
     justify-content: space-around;
     align-items: center;
     padding: 20px 100px 30px 100px;
-    filter: invert(22%) sepia(6%) saturate(99%) hue-rotate(202deg) brightness(92%) contrast(96%);   
+    filter: invert(22%) sepia(6%) saturate(99%) hue-rotate(202deg) brightness(92%) contrast(96%);
+    z-index: -1;   
 }
 .mainIcons { 
     height: 20px;
