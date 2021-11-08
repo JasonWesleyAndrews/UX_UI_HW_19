@@ -2,11 +2,13 @@ $("#mobileNav").on("click", function() {
     if ( $(".subNav").first().is( ":hidden" ) ) {
       $(".subNav").slideDown("slow");
       $(".grayBG").fadeIn("slow");
-
+  
+    
       
     } else {
       $(".subNav").slideUp("slow");
-      $(".grayBG").fadeOut();
+      $(".grayBG").fadeOut("slow");
+      
     }
   });
 

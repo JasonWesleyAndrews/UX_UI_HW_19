@@ -4,6 +4,7 @@
      <title>Jason Andrews - Product Designer</title>
      <meta name="viewport" content="width=device-width, initial-scale=1">
      <link href="css/index.css" rel="stylesheet" type="text/css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
    </head>  
    <body>
        <!-- header -->
@@ -17,12 +18,22 @@
                 <li class="navCollapse"><a href="#">About</a></li>
                 <li class="navCollapse">Work</li>
                 <li class="navCollapse">Resume</li>
-                <li class="mobileNav">Menu</li>
+                <li id="mobileNav" class="mobileNav">Menu</li>
                 <li class="contactButton">Contact</li>
              </ul>
            </nav>
     </header>
-    <hr>
+   
+    <ul class="subNav">
+      <li class="subNavItem"><a href="index.html">Home</a></li>
+      <hr>
+      <li class="subNavItem"><a href="aboutMe.html">About</a></li>
+      <hr>
+      <li class="subNavItem">Work</li>
+      <hr>
+      <li class="subNavItem">Resume</li>      
+</ul>
+<div id="grayBG" class="grayBG"></div>
     <div class="heading">
         <h1>About Me</h1>
     </div>
@@ -87,4 +98,5 @@ I have the soft skills to collaborate with engineers, product and other designer
       </ul>
     </footer>
   </body>
+  <script src="js/index.js"></script>
   </html>
